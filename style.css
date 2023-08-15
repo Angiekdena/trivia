@@ -20,7 +20,12 @@
   width: 620px;
   height: 346px;
   margin: 20px auto;
-  background-image: url(https://i0.wp.com/bitn.blog/wp-content/uploads/2017/08/wwtbam.jpg?resize=620%2C346&ssl=1);
+  background: linear-gradient(
+    rgb(44, 55, 216),
+    rgb(131, 29, 248),
+    rgb(191, 147, 241),
+    rgb(76, 64, 248)
+  );
   color: white;
   font-size: 20px;
   flex-direction: column;
