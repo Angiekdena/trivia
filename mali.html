@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-group m-3">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" class="form-control">
+                <option value="9">Conocimientos Generales</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="dificultad">Dificultad:</label>
+            <select id="dificultad" class="form-control">
+                <option value="easy">Fácil</option>
+                <option value="medium">Medio</option>
+                <option value="hard">Difícil</option>
+            </select>
+        </div>
+
+        <div class="form-group m-3">
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" class="form-control">
+                <option value="multiple">Opción Múltiple</option>
+                <option value="boolean">Verdadero o Falso</option>
+            </select>
+        </div>
+
+        <div id="contenedor-quiz" class="m-3"></div>
+        <button id="siguiente-pregunta">Siguiente pregunta</button>
+        <button id="nueva-trivia">Iniciar nueva trivia</button>
+        <div id="puntaje" class="m-3">Puntaje: 0</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
